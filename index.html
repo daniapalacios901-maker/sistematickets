@@ -30,12 +30,12 @@
               <div class="mb-2">
                 <label class="form-label">Nombre</label>
                 <input v-model="form.nombre" class="form-control" type="text" />
-                <div v-if="errors.nombre" class="d-none">{{ errors.nombre }}</div>
+                <div v-if="errors.nombre" class="form-text text-danger">{{ errors.nombre }}</div>
               </div>
               <div class="mb-2">
                 <label class="form-label">Email</label>
                 <input v-model="form.email" class="form-control" type="email" />
-                <div v-if="errors.email" class="d-none">{{ errors.email }}</div>
+                <div v-if="errors.email" class="form-text text-danger">{{ errors.email }}</div>
               </div>
               <div class="mb-2">
                 <label class="form-label">Prioridad</label>
@@ -48,7 +48,7 @@
               <div class="mb-2">
                 <label class="form-label">Mensaje o Falla</label>
                 <textarea v-model="form.mensaje" rows="4" class="form-control"></textarea>
-                <div v-if="errors.mensaje" class="d-none">{{ errors.mensaje }}</div>
+                <div v-if="errors.mensaje" class="form-text text-danger">{{ errors.mensaje }}</div>
               </div>
               <button class="btn btn-primary" type="submit">Enviar</button>
             </form>
